@@ -62,7 +62,7 @@ const displayNewsId = (news) => {
         notFound.classList.add('d-none');
     }
 
-    // how many new see message this 
+    //  message check list
 
     const showTotalNews = document.getElementById('total-news-show');
 
@@ -168,7 +168,7 @@ const displayModal = (datas) => {
    </div>
    <div class="modal-footer">
      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-     <button type="button" class="btn btn-primary">Save changes</button>
+     <button type="button" class="btn btn-success">Save changes</button>
    </div>
  </div>
    `;
