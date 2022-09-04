@@ -42,18 +42,24 @@ const displayNewsId = (news) => {
     document.getElementById('spinner').style.display = 'none';
     const allNews = news.data;
     allNews.sort((a, b) => {
-            return b.total_view - a.total_view
-        })
-        // console.log(allNews);
+        return b.total_view - a.total_view
+    })
+
+    // console.log(allNews);
+
     const newsContainer = document.getElementById('news-container');
     newsContainer.innerHTML = ``;
     const notFound = document.getElementById('not-found');
+
     // if no news available see a no item message
+
     if (allNews.length === 0) {
         notFound.classList.remove('d-none');
         const showTotalNews = document.getElementById('total-news-show');
         showTotalNews.innerText = '0 News Available in this cetagory';
+
         // console.log('no data available')
+
     } else {
         notFound.classList.add('d-none');
     }
