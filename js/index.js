@@ -44,7 +44,7 @@ const displayNewsId = (news) => {
     allNews.sort((a, b) => {
             return b.total_view - a.total_view
         })
-        // console.log(allNews)
+        // console.log(allNews);
     const newsContainer = document.getElementById('news-container');
     newsContainer.innerHTML = ``;
     const notFound = document.getElementById('not-found');
