@@ -46,7 +46,6 @@ const displayNewsId = (news) => {
     })
 
     // console.log(allNews);
-
     const newsContainer = document.getElementById('news-container');
     newsContainer.innerHTML = ``;
     const notFound = document.getElementById('not-found');
@@ -59,14 +58,14 @@ const displayNewsId = (news) => {
         showTotalNews.innerText = '0 News Available in this cetagory';
 
         // console.log('no data available')
-
     } else {
         notFound.classList.add('d-none');
     }
 
     // how many new see message this 
+
     const showTotalNews = document.getElementById('total-news-show');
-    // 
+
     if (allNews.length >= 1) {
         showTotalNews.innerText = `
           ${allNews.length} News Find Of this categories
@@ -115,6 +114,7 @@ const displayNewsId = (news) => {
     
         `;
         newsContainer.appendChild(newsDiv);
+
         // console.log(allNews.length)
     });
 }
